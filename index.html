@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Stock Price Analysis</title>
     <style>
         body {
             background-color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="container">
+        <h1>Stock Price Comparison</h1>
+        <img src="static/stock_plot.png" alt="Microsoft vs Apple Stock Prices">
+    </div>
 </body>
 </html> 
